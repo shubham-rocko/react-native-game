@@ -9,7 +9,10 @@
          <View style={styles.screen}>
             <TitleText>Game is Over Now!</TitleText>
             <View style={styles.imageContainer}>
-                <Image source={require('../assets/success.png')} 
+                <Image 
+                fadeDuration={1000}
+                // source={require('../assets/success.png')} 
+                source={{uri: 'https://pixabay.com/photos/landscape-alps-europe-mountains-3725657/'}}
                 style={styles.image}
                 resizeMode="cover"/>
             </View>
