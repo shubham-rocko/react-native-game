@@ -3,7 +3,9 @@
 
  import BodyText from "../components/BodyText";
  import TitleText from "../components/TitleText";
-import Colors from '../constants/color';
+ import Colors from '../constants/color';
+ import MainButton from "../components/MainButton";
+
 
  const GameOver = (props) => {
      return (
@@ -23,7 +25,9 @@ import Colors from '../constants/color';
                     to guess the number <Text style={styles.highlight}>{props.userNumber}</Text>
                 </BodyText>
             </View>
-            <Button title="NEW GAME" onPress={props.onRestart} />
+            <MainButton onPress={props.onRestart} >
+                NEW GAME
+            </MainButton>
          </View>
      );
  }
